@@ -37,25 +37,94 @@
     <!-- Les balises de structure -->
     <h1>Les balises de structure : </h1>
 
-    <!-- <div> : Correspond à une "brique", contient du contenu -->
-    <div>
+    <summary>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Fuga quae nisi deserunt nobis mollitia aliquid tempora, 
-            excepturi libero ullam quo qui et dicta, 
-            voluptatum quidem vel ad sunt aut unde.
+            Paragraphe dans un sommaire
         </p>
-    </div>
+    </summary>
+
+    <!-- <a> : balise de lien -->
+    <a href="#">~Lien</a>
+
+    <!-- <button> : Créé un bouton -->
+    <button> Click me !</button>
+
+    <!-- <pre> : texte préfomaté, conserve les espaces et saut à la ligne -->
+    <pre>
+        Texte
+
+
+        préformaté
+    </pre>
+
+    <!-- <nav> : Correspond à la navbar = menu-->
+    <nav style="background: rgb(231, 118, 118);">Texte dans une balise nav</nav>
+    
+    <!-- <header> : Ne pas confondre avec <head>, en-tête du document -->
+    
+    <header style="background: rgb(112, 161, 136);">
+        <p>
+            Paragraphe au sein de la balise header
+        </p>
+    </header>
+    
+    <!-- <main> : Corps principal de la page, une seule par page-->
+    <main style="background: rgb(206, 126, 179);">
+        <p>
+            Paragraphe au sein de la balise main
+        </p>
+    </main>
 
     <!-- <section> : Idem que <div> mais sémantiquement plus forte -->
-    <section>
+    <section style="background: rgb(210, 214, 201);">
         <p>
             Paragraphe au sein d'une section.
         </p>
     </section>
 
-    <!-- <nav> : Correspond à la navbar-->
-    <nav></nav>
+    <article style="background:rgb(78, 138, 98);">
+        <p>
+            Paragraphe au sein d'une balise article
+        </p>
+    </article>
 
+    <!-- <div> : Correspond à une "brique", contient du contenu -->
+    <div style="background: rgb(86, 84, 197);">
+        <p>
+            Paragraphe au sein d'une balise div
+        </p>
+    </div>
+
+    <!-- <footer> : Pied de page -->
+    <footer style="background: rgb(163, 117, 187);">
+        <p>
+            Paragraphe au sein d'une balise footer -> Pied de page
+        </p>
+    </footer>
+
+    <!-- Balise auto-fermentes-->
+    <h1>Les balises auto-fermentes</h1>
+
+    <!-- <img> : Intégrer des images -->
+    <!--    attributs : -->
+    <!--        - src : chemin de l'image -->
+    <!--        - alt : alternative, titre de l'image -->
+
+    <img src="mqdefault.jpg" alt="balise_img">
+
+    <!--   <br> : saut de ligne -->
+    <p>
+        Saut <br>
+        de <br>
+        ligne
+    </p>
+
+    <!-- <hr> : Démarquation -->
+    <p>Etape 1 </p>
+    <hr>
+    <p>Etape 2 </p>
+
+    <!-- <input> : Saisie utilisateur -->
+    <input type="text">
 </body>
 </html>
