@@ -1,39 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Les attributs des inputs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributs des inputs</title>
 </head>
 <body>
     <button>
-        <a href="../11-input-type/index.html">Types d'input</a>
+        <a href="../11-input-type/index.html">Les types d'inputs</a>
     </button>
     <hr>
-    <h1>Fonctionnant avec tous les types</h1>
-
-    <h3>Disabled</h3>
-    <label for="disabled">Disabled </label>
-    <input type="text" name="disabled" id="disabled" disabled>
-
-    <h3>Autocomplete</h3>
-    <label for="autocomplete">Autocomplete </label>
-    <input type="text" name="autocomplete" id="autocomplete">
-
-    <h3>Name libellé pour le backend</h3>
-    <label for="name">Name </label>
-    <input type="text" name="name" id="name">
-
-    <h3></h3>
-    <label for=""></label>
-    <input type="text" name="" id="">
-    <h3></h3>
-    <label for=""></label>
-    <input type="text" name="" id="">
-    <h3></h3>
-    <label for=""></label>
-    <input type="text" name="" id="">
+    <h1>Les attributs des balises input</h1>
+    <h2>Fonctionnant avec tous les types d'input : </h2>
+    <h3>disabled</h3>
+    <input type="text" disabled>
+    <h3>autocomplete</h3>
+    <input type="text" autocomplete>
+    <h3>name</h3>
+    <input type="text" name="">
+    <h3>value</h3>
+    <input type="text" value="">
+    <h3>placeholder</h3>
+    <input type="text" placeholder="indication">
+    <h3>required</h3>
+    <input type="text" required>
+    <h2>Fonctionnant avec des inputs particuliers</h2>
+    <h3>checked</h3>
+    <h4>CHECKBOX</h4>
+    <input type="checkbox" checked>
+    <h4>RADIO</h4>
+    <input type="radio" checked>
+    <h3>min</h3>
+    <h4>RANGE</h4>
+    <input type="range" min="0">
+    <h4>NUMBER</h4>
+    <input type="number" min="0">
+    <h3>max</h3>
+    <h4>RANGE</h4>
+    <input type="range" max="20">
+    <h4>NUMBER</h4>
+    <input type="number" max="20">
+    <h3>value</h3>
+    <h3>RANGE</h3>
+    <input type="range" value="5">
+    <h3>NUMBER</h3>
+    <input type="number" value="5">
+    <h3>multiple</h3>
+    <input type="file" multiple>
+    <h3>capture</h3>
+    <input type="file" capture>
+    <h2>Avec les inputs de type image</h2>
+    <h3>capture</h3>
+    <input type="image" capture src="" alt="">
+    <hr>
+    <button>
+        <a href="../13-selectbox-datalist/index.html">Selectbox et datalist</a>
+    </button>
 </body>
 </html>
