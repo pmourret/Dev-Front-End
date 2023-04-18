@@ -9,9 +9,80 @@
 </head>
 <body>
     <button>
-        <a href="../14-exercice-2/index.html"></a>
+        <a href="../14-exercice-2/index.html">Exercice 2</a>
     </button>
     <hr>
+
+    <!-- AUDIOS -->
+    <h1>Audios</h1>
+    <h2>Balise : &lt;audio&gt;</h2>
+    <audio controls src="./medias/songs/cors.mp3"></audio>
+    <h2>Attributs </h2>
+    <ul>
+        <li>controls : affiche le lecteur</li>
+        <li>autoplay : lecture automatique</li>
+        <li>loop : lecture en boucle</li>
+    </ul>
+
+    <!-- VIDEOS -->
+    <h1>Videos</h1>
+    <h2>Balise : &lt;video&gt;</h2>
+    <video controls  poster="./medias/images/275x183_kaamelott.jpg" src="./medias/videos/doigt_du_cul.mp4"></video>
+    <h2>Attributs</h2>
+    <ul>
+        <li>poster : image de couverture</li>
+        <li>controls : affiche les controles</li>
+        <li>autoplay : lecture automatique</li>
+        <li>loop : lecture en boucle</li>
+        <li>muted : son muté</li>
+    </ul>
+
+    <!-- IMAGES -->
+    <h1>Images</h1>
+    <h2>Balise : &lt;image&gt;</h2>
+    <img src="medias/images/192x263_kaamelott.jpg" alt="affiche kaamelott 1er volet">
+    <h2>Attributs</h2>
+    <ul>
+        <li>src : source du média</li>
+        <li>alt : texte alternatif</li>
+    </ul>
+
+    <h2>Balise : &lt;figure&gt;</h2>
+    <p>Permet d'afficher différentes images en fonctions de la taille de l'écran</p>
+
+    <figure>
+        <picture>
+            <source media="(min-width: 680px)" srcset="medias/images/1200x680_kaamelott.jpg" type="image/jpg">
+            <source media="(min-width: 263px)" srcset="./medias/images/192x263_kaamelott.jpg" type="image/jpg">
+            <img src="./medias/images/1200x680_kaamelott.jpg" alt="kaamelott">
+            <figcaption>Je suis une description</figcaption>
+        </picture>
+    </figure>
+
+    <h3>Structure</h3>
+    <pre>
+        &lt;figure&gt;
+            &lt;picture&gt;
+                &lt;source&gt;
+                &lt;source&gt;
+                &lt;img&gt;
+                &lt;figcaption&gt;
+            &lt;picture&gt;
+        &lt;figure&gt;
+    </pre>
+
+    <h3>Attributs</h3>
+    <ul>
+        <li>media : choix de la taille minimale d'écran</li>
+        <li>srcset : média source</li>
+        <li>type : type du média</li>
+    </ul>
+
+
+    <hr>
+    <button>
+        <a href="../16-entites-emodjis-icones/index.html">Les entités, émodjis et icones</a>
+    </button>
 
 </body>
 </html>
