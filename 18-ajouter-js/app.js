@@ -1,0 +1,1 @@
+alert("Je suis une alerte depuis 'app.js'");

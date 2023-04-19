@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button>
+    <a href="../17-ajouter-css/index.html">Ajouter du CSS</a>
+</button>
+<hr>
+
+<h1>La balise &lt;script&gt;</h1>
+<ul>
+    <li><p>Directement dans la balise &lt;head&gt;</p>
+        <pre>
+                &lt;script&gt;
+                    alert('Je suis une alerte depuis le head') ;
+                &lt;/script&gt;
+            </pre>
+    </li>
+    <li><p>Directement dans la balise &lt;body&gt;</p>
+        <pre>
+                &lt;script&gt;
+                    alert('Je suis une alerte depuis le body') ;
+                &lt;/script&gt;
+            </pre>
+    </li>
+</ul>
+
+<h1>Depuis un fichier externe</h1>
+<p>Création d'une feuille de script nécessaire à l'application.</p>
+<p>Ouverture d'une balise &lt;script&gt; avant la fermeture du body</p>
+<pre>
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+</pre>
+
+<script src="app.js"></script>
+
+<h1>Attributs de &lt;script&gt;</h1>
+<ul>
+    <li>defer : précise que le script doit être utilisé avant le chargement de la page</li>
+    <li>type : précise le type de script utilisé</li>
+    <li>integrity : vérifie l'intégrité d'un script pour un script distant</li>
+</ul>
+<hr>
+<button>
+    <a href="../19-tableaux/index.html">Les tableaux</a>
+</button>
+</body>
+</html>
