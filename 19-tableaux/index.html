@@ -7,16 +7,103 @@
     <title>Document</title>
 </head>
 <body>
+
+    <style>
+        .comment{
+            color: red;
+        }
+        table, thead, tr, th, td{
+            border: 2px solid black;
+        }
+    </style>
+
     <button>
         <a href="../18-ajouter-js/index.html">Ajouter JS</a>
     </button>
     <hr>
+    <h1>Les tableaux</h1>
+    <h2>Structure d'un tableau</h2>
+    <pre>
+        <b class="comment">// Balise parente</b> 
+        &lt;table&gt;
+            <b class="comment">// Header du tableau</b>
+            &lt;thead&gt;
+                <b class="comment">// Ligne du tableau</b>
+                &lt;tr&gt;
+                    <b class="comment">// Titre de la colonne</b>
+                    &lt;th&gt;
+                    &lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            <b class="comment">// Body du tableau</b>
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    <b class="comment">//Contenu du tableau</b>
+                    &lt;td&gt;
+                    &lt;/td&gt;
+                &lt;tr&gt;
+            &lt;/tbody&gt;
+            <b class="comment">// Footer du tableau</b>
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    <b class="comment">//Contenu du tableau</b>
+                    &lt;td&gt;
+                    &lt;/td&gt;
+                &lt;tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    </pre>
+    
+    <h2>Attributs des balises &lt;td&gt;</h2>
+    <ul>
+        <li>colspan : étend la cellule sur le nombre de colonne spécifié</li>
+        <li>rowspan : étend la cellule sur le nombre de ligne spécifié</li>
+    </ul>
 
+    <h2>Démo : </h2>
 
+    <p>Les éléments sont représentés sous la forme colonne:ligne</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Titre colonne 0</th>
+                <th>Titre colonne 1</th>
+                <th>Titre colonne 2</th>
+                <th>Titre colonne 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0:0</td>
+                <td>1:0</td>
+                <td>2:0</td>
+                <td>3:0</td>
+            </tr>
+            <tr>
+                <td>0:1</td>
+                <td>1:1</td>
+                <td>2:1</td>
+                <td>3:1</td>
+            </tr>
+            <tr>
+                <td>0:2</td>
+                <td>1:2</td>
+                <td>2:2</td>
+                <td>3:2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">FOOTER</td>
+            </tr>
+        </tfoot>
+
+    </table>
 
     <hr>
     <button>
-        <a href=""></a>
+        <a href="../20-exercice-3/index.html">Exercice 3</a>
     </button>
 </body>
 </html>
