@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .comment{
+        color: red;
+    }
+    .tag{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <button>
+        <a href="../22-semantique/index.html">La sémantique</a>
+    </button>
+    <hr>
+    <h1>Les typographies</h1>
+    <p>Obtenir des typographies peut se réaliser sur <a href="https://fonts.google.com">Google Fonts.</a></p>
+
+    <p>Afin d'intégrer la police choisie deux options</p>
+    <ul>
+        <li>Dans une balise link située dans le &lt;head&gt;</li>
+        <li>Par un import dans une feuille de style CSS</li>
+    </ul>
+    <hr>
+    <pre>
+        <p class="comment">// Méthode n°1</p>
+        <p class="comment">// Lien vers la police</p>
+        <span class="tag">&lt;head&gt;</span>
+            &lt; rel="preconnect" href="https://fonts.googleapis.com"&gt;
+            &lt; rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+            &lt; href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"&gt;
+        <span class="tag">&lt;/head&gt;</span>
+
+        <p class="comment">// Définition de règle CSS => Appliquer la police à tous les éléments du &lt;body&gt;</p>
+        <span class="tag">&lt;style&gt;</span>
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+        <span class="tag">&lt;/style&gt;</span>
+    </pre>
+    <hr>
+    <pre>
+        <p class="comment">// Méthode n°2</p>
+        <span class="tag">&lt;style&gt;</span>
+            <p class="comment">// Import de la police</p>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+            <p class="comment">// Définition de règle CSS => Appliquer la police à tous les éléments du &lt;body&gt;</p>
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+
+        <span class="tag">&lt;/style&gt;</span>
+    </pre>
+
+    <hr>
+    <button>
+        <a href="../24-favicon/index.html">La favicon</a>
+    </button>
+</body>
+</html>
