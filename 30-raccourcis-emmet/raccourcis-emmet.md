@@ -64,5 +64,55 @@ Ce qui donne en HTML :
 
 - Monter d'un étage 
 ````text
+div>ul^p
+````
+Ce qui donne en HTML
+````html
+    <div>
+        <ul></ul>
+    </div>
+    <p></p>
+````
 
+- Créer des groupes d'éléments
+````text
+section(header>div>ul>li*2)+footer>p{je suis un footer}
+````
+
+Ce qui donne en HTML
+````html
+    <section>
+        <header>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+    </section>
+    <footer>
+        <p>je suis un footer</p>
+    </footer>
+````
+
+- Appliquer les attributs directements
+````text
+a[href='https://google.fr target='blank']
+````
+
+- Pour les formulaires et les inputs
+````text
+# Créer un formulaire
+form
+
+# Formulaire avec méthodes
+form:get
+form:post
+
+# Pour les types d'inputs
+input:type
+
+# Pour les labels
+lab
 ````
