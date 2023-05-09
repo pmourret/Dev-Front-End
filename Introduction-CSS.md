@@ -2,8 +2,12 @@
 
 ## Sommaire : 
 * [Introduction au CSS](#introduction-à-css-)
-* [Ou écrire du CSS](#ou-écrire-du-css-)
+* [Où écrire du CSS](#ou-écrire-du-css-)
 * [Sélectionner des éléments en CSS](#sélectionner-des-éléments-en-css)
+* [Les couleurs](#les-couleurs)
+* [Les dimensions](#les-dimensions)
+  * [Les unités de mesure 1](#les-unités-de-mesure)
+* [Les marges](#les-marges)
 ## Introduction à CSS 
 
 * CSS signifie Cascading Style Sheets
@@ -104,3 +108,86 @@ p{
   </p>
 </div>
 ````
+## Les couleurs
+
+Il existe différentes méthodes pour appliquer une couleur en CSS :
+- Par un nom prédéfini
+````css
+p{
+    color: red;
+}
+````
+- Par une valeur hexadécimale
+````css
+p{
+    color: #8be9fd;
+}
+````
+- Par un méthode rgb()
+````css
+p{
+    /* rgba -> 'a' définit le canal alpha (opacité)  */
+    color: rgba(125,12,46,1);
+}
+````
+- Par une méthode hsl()
+````css
+/*
+ * h -> hue = teinte
+ * s -> saturation
+ * l -> luminosity
+ */
+p{
+    color: hsl(39, 100%, 50%);
+}
+````
+### Appliquer une couleur à un texte 
+
+````css
+p{
+  color: red;
+}
+````
+
+### Appliquer une couleur à un fond
+
+````css
+p{
+  background-color: orange;
+}
+````
+
+## Les dimensions
+
+Il existe différents attributs en CSS permettant de dimensionner des éléments.
+````css
+.container {
+  /* Largeur de l'élément */
+  width: 100px;
+  /* hauteur de l'élément */
+  height: 100px;
+  
+  /* Largeur maximale de l'élément */
+  max-width: 75px;
+  /* Largeur minimale de l'élément */
+  min-width: 20px;
+  
+  /* Hauteur maximale de l'élément */
+  max-height: 75px;
+  /* Hauteur minimale de l'élément */
+  min-height: 20px;
+}
+````
+### Les unités de mesure
+Il existe également différentes unités de mesure en CSS 
+
+|     Unité     | Relative à                                                                          |
+|:-------------:|:------------------------------------------------------------------------------------|
+|      em       | La taille de police de l'élément                                                    |
+|      rem      | La taille de police de l'élément racine                                             |
+|       %       | La taille de l'élément parent                                                       |
+|      px       | Une valeur en pixel                                                                 |
+| Plus d'info.. | [Lien vers MDN](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Values_and_Units) |
+
+## Les marges
+
