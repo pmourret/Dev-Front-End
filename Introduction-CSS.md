@@ -5,9 +5,16 @@
 * [Où écrire du CSS](#ou-écrire-du-css-)
 * [Sélectionner des éléments en CSS](#sélectionner-des-éléments-en-css)
 * [Les couleurs](#les-couleurs)
+  * [Appliquer une couleur à un texte](#appliquer-une-couleur-à-un-texte-)
+  * [Appliquer une couleur à un fond](#appliquer-une-couleur-à-un-fond)
 * [Les dimensions](#les-dimensions)
   * [Les unités de mesure 1](#les-unités-de-mesure)
 * [Les marges](#les-marges)
+  * [Margin](#margin-)
+  * [Padding](#padding)
+* [Elements block et inline](#les-éléments-block-et-inline)
+* [Les displays](#les-displays)
+
 ## Introduction à CSS 
 
 * CSS signifie Cascading Style Sheets
@@ -191,3 +198,122 @@ Il existe également différentes unités de mesure en CSS
 
 ## Les marges
 
+Il existe deux types de marge en CSS :
+
+### MARGIN 
+  - Marge extérieure à l'élément
+````css
+.box{
+    /* Marge extérieure supérieure */
+    margin-top: 10px;
+    /* Marge extérieure inférieure */
+    margin-bottom: 10px;
+    /* Marge extérieure gauche */
+    margin-left: 10px;
+    /* Marge extérieure droite */
+    margin-right: 10px;
+    
+    /* Toutes les marges extérieures */
+    margin: 10px;
+    
+    /* Deux valeurs : 
+     * (supérieure + inférieure) 
+     * (gauche + droite)
+     */
+    margin: 10px 15px;
+    
+    /*
+     * Trois valeurs : 
+     * supérieure
+     * (gauche + droite)
+     * inférieure
+     */
+    margin: 10px 15px 20px;
+    
+    /*
+     * Quatre valeurs : 
+     * supérieure
+     * droite
+     * inférieure
+     * gauche
+     */
+    margin: 10px 20px 15px 5px ;
+}
+````
+### PADDING
+  - Marge intérieure à l'élément
+````css
+.box{
+    /* Marge intérieure supérieure */
+    padding-top: 10px;
+    /* Marge  intérieure inférieure */
+    padding-bottom: 10px;
+    /* Marge intérieure gauche */
+    padding-left: 10px;
+    /* Marge intérieure droite */
+    padding-right: 10px;
+    
+    /* Toutes les marges intérieures */
+    margin: 10px;
+    
+    /* Deux valeurs : 
+     * (supérieure + inférieure) 
+     * (gauche + droite)
+     */
+    margin: 10px 15px;
+    
+    /*
+     * Trois valeurs : 
+     * supérieure
+     * (gauche + droite)
+     * inférieure
+     */
+    margin: 10px 15px 20px;
+    
+    /*
+     * Quatre valeurs : 
+     * supérieure
+     * droite
+     * inférieure
+     * gauche
+     */
+    margin: 10px 20px 15px 5px ;
+}
+````
+
+> :bulb: Astuce pour centrer un élément sur l'axe X 
+
+````css
+.box{
+    background-color: salmon;
+    width: 150px;
+    height: 150px;
+    /* RAPPEL : (superieur + inferieur) et (gauche + droite) */
+    margin: 0 auto;
+}
+````
+
+## Les éléments block et inline
+En HTML il existe deux grandes familles d'éléments.
+* Les éléments block 
+  * Acceptent une grande partie des propriétés CSS
+* Les éléments inline
+  * N'acceptent pas les propriétés suivantes :
+````css
+span{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+````
+ * Mais acceptent les propriétés suivantes :
+````css
+span{
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 15px; /* Toutes les marges intérieures */
+}
+````
+
+## Les displays
